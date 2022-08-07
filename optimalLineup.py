@@ -24,7 +24,7 @@ players = [p1,p2,p3,p4,p5,p6,p7,p8,p9]
 
 #Automatic Stat Retrieval, to manually input, just set each player's fields specifically below.
 #Get Page Source
-response = requests.get('https://www.mlb.com/stats/?page=4')
+response = requests.get('https://www.mlb.com/stats/new-york-yankees?playerPool=ALL')
 r = response.text
 soup = BeautifulSoup(r, 'html.parser')
 
